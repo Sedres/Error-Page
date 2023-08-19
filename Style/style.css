@@ -1,0 +1,73 @@
+/* Variables and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --button-color: #2e5a84;
+    --button-hover-color: #00004d;
+    --button-text-color: #ffffff;
+}
+
+/* Elements styles */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+/* Text styles */
+.error {
+    text-align: center;
+    padding: 3rem;
+}
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 2rem;
+}
+
+/* Image styles and animations */
+img {
+    height: 1280px;
+    width: 1920px;
+    max-width: 1920px;
+    max-height: 1080px;
+}
+
+/* Button styles */
+button {
+    width: 200px;
+    height: 50px;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 30px;
+    color: var(--button-text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    margin: 3rem;
+}
+button:hover {
+    background-color: var(--button-hover-color);
+}
+button:active {
+    transform: scale(0.9);
+}
+
+/* Adaptative medias */
+@media screen and (max-width: 1120px) {
+    img {
+        max-width: 600px;
+        max-height: 400px;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
